@@ -15,7 +15,11 @@ function computeInterest()
      var year = new Date().getFullYear()+parseInt(years) ;
      var amount = Number(principal) + Number(interest)
      //show the result
-     document.getElementById("result").innerHTML="If you deposit "+principal+ ",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>"
+    el = document.getElementById("result");
+    el.innerHTML = "If you deposit <span class='highlight'>" + principal + "</span><br/>";
+    el.innerHTML += "at an interest rate of <span class='highlight'>" + rate + "%" + "</span><br/>";
+    el.innerHTML += "you will receive an amount of <span class='highlight'>" + interest + "</span>,<br/>";
+    el.innerHTML += "in the year <span class='highlight'>" + year + "</span>.<br/>";
 
 }
 
