@@ -8,3 +8,7 @@ h1{color:grey;font-family:verdana;}
     border-radius : 25px;
     align : centre;
 }
+#principal {
+    margin-left:10px;
+    padding-left: 10x;
+}
